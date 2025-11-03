@@ -22,5 +22,6 @@
     "parcel": "^2.16.0"
   },
   "browserslist": ["> 0.5%, last 2 versions, not dead"],
-  "source": "src/index.html"
+  "source": "src/index.html",
+  "main": "dist/index.html"
 }
