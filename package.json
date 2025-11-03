@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/somogyibence/djmess.hu#readme",
   "devDependencies": {
-    "parcel": "^2.16.0"
+    "parcel": "^2.16.0",
+    "sharp": "^0.33.5"
   },
-  "browserslist": ["> 0.5%, last 2 versions, not dead"],
+  "browserslist": [
+    "> 0.5%, last 2 versions, not dead"
+  ],
   "source": "src/index.html"
 }

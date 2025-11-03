@@ -1,0 +1,152 @@
+:root {
+  --bg-h: 0;
+  --bg-s: 0%;
+  --bg-l: 0%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  max-height: 1440px;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    hsl(var(--bg-h), var(--bg-s), var(--bg-l)) 0%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.738) 5.7%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.541) 10.2%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.382) 14.1%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.278) 16.95%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.194) 19.5%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.126) 21.9%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.075) 24.06%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.042) 25.83%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.021) 27.3%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.008) 28.56%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.002) 29.46%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0) 30%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0) 100%
+  ), linear-gradient(
+    to left,
+    hsl(var(--bg-h), var(--bg-s), var(--bg-l)) 0%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.738) 5.7%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.541) 10.2%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.382) 14.1%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.278) 16.95%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.194) 19.5%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.126) 21.9%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.075) 24.06%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.042) 25.83%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.021) 27.3%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.008) 28.56%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0.002) 29.46%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0) 30%,
+    hsla(var(--bg-h), var(--bg-s), var(--bg-l), 0) 100%
+  );
+  z-index: 10;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    left: 20px;
+    right: 20px;
+  }
+}
+
+.h1 {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.h1 .name {
+  display: inline;
+}
+
+.small-name {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .small-name {
+    display: block;
+  }
+
+  .h1 .name {
+    display: none;
+  }
+}
+
+.social {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
