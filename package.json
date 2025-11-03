@@ -1,0 +1,26 @@
+{
+  "name": "djmess.hu",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somogyibence/djmess.hu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/somogyibence/djmess.hu/issues"
+  },
+  "homepage": "https://github.com/somogyibence/djmess.hu#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "browserslist": ["> 0.5%, last 2 versions, not dead"],
+  "source": "src/index.html"
+}
