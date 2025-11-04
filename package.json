@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "postbuild": "cp src/og-share.jpg dist/og-share.jpg"
   },
   "repository": {
     "type": "git",
